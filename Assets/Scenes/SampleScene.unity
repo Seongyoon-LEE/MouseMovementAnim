@@ -623,6 +623,7 @@ GameObject:
   - component: {fileID: 1421016222}
   - component: {fileID: 1421016221}
   - component: {fileID: 1421016220}
+  - component: {fileID: 1421016223}
   m_Layer: 0
   m_Name: wizard_humanoid
   m_TagString: Untagged
@@ -905,7 +906,7 @@ Animator:
   m_GameObject: {fileID: 1411616467}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 43fd4f8795bf86e47af757117128f21c, type: 3}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 89c3545ca43e189489cc91fe1fbc1e28, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
@@ -929,8 +930,8 @@ NavMeshAgent:
   m_Speed: 3
   m_Acceleration: 8
   avoidancePriority: 50
-  m_AngularSpeed: 120
-  m_StoppingDistance: 0
+  m_AngularSpeed: 3000
+  m_StoppingDistance: 0.5
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
@@ -988,6 +989,18 @@ CapsuleCollider:
   m_Height: 2.3
   m_Direction: 1
   m_Center: {x: 0, y: 0.98, z: 0}
+--- !u!114 &1421016223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1411616467}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 605907b1f92640645b4823df819bf6c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!137 &1425211995
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 0
